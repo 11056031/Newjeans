@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    android:background="@drawable/newjeans2"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ntp"
+        android:layout_width="229dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="請輸入姓名"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nt"
+        android:layout_width="71dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:text="姓名"
+        android:textColor="@android:color/system_neutral2_1000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/ntp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/Music"
+        android:layout_width="226dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nt">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="專輯A版388$"
+            android:textColor="@android:color/system_neutral2_1000"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="專輯B版420$"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/Card"
+        android:layout_width="230dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/Music"
+        app:layout_constraintTop_toBottomOf="@+id/Music">
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小卡A60$"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小卡B50$"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:text="明信片60$"
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/Card"
+        app:layout_constraintTop_toBottomOf="@+id/Card" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="102dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="日曆120$"
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cb1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb1"
+        app:layout_constraintTop_toBottomOf="@+id/cb1" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="筆記本80$"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cb2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb2"
+        app:layout_constraintTop_toBottomOf="@+id/cb2" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:text="確認購買"
+        app:layout_constraintStart_toStartOf="@+id/cb3"
+        app:layout_constraintTop_toBottomOf="@+id/cb3" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="重置數量"
+        app:layout_constraintStart_toEndOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/cb3" />
+
+    <EditText
+        android:id="@+id/ntp2"
+        android:layout_width="169dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="請輸入專輯數量"
+        app:layout_constraintStart_toEndOf="@+id/cb1"
+        app:layout_constraintTop_toBottomOf="@+id/Card" />
+
+    <EditText
+        android:id="@+id/ntp3"
+        android:layout_width="168dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="請輸入小卡數量"
+        app:layout_constraintStart_toEndOf="@+id/cb2"
+        app:layout_constraintTop_toBottomOf="@+id/ntp2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
